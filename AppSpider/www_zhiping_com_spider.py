@@ -81,7 +81,7 @@ def start():
             break
         mongo.insert_one(result)
         print("已爬取到：{}条数据".format(str(num)))
-        num = num + 1
+        num += 1
         time.sleep(2)
         action.ToRight()
         time.sleep(1)
